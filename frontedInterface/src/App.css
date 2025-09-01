@@ -1,0 +1,98 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.navbar-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.navbar-links li:hover {
+  color: #f39c12;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.form-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+.form-title {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.form-card input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.submit-btn:hover {
+  background: #357ABD;
+}
+
+/* Themes Grid */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.theme-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.theme-color {
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .themes-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,116 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+/* Full Page Background */
+
+.fullpage {
+  min-height: 100vh;
+    width: 400%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8fafc, #e0f2fe, #dbeafe);
+  /* Premium Gradient */
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  padding: 20px;
+}
+
+/* Background Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Main Section */
+.requirement-section {
+  padding: 50px 35px;
+  max-width: 500px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.requirement-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.requirement-section h2 {
+  font-size: 28px;
+  color: #0f172a;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Form */
+.requirement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs & Textarea */
+.requirement-form textarea {
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.requirement-form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.2);
+}
+
+/* Submit Button */
+.requirement-form button {
+  padding: 16px;
+  font-size: 17px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.requirement-form button:hover {
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Error Message */
+.error-message {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .requirement-section {
+    width: 90%;
+    padding: 35px 20px;
+  }
+}

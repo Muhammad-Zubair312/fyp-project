@@ -1,0 +1,13 @@
+{
+    "colors": {
+      "background": "#111827",
+      "text": "#f9fafb",
+      "primary": "#6366f1",
+      "secondary": "#374151",
+      "accent": "#f43f5e"
+    },
+    "fonts": {
+      "heading": "Poppins, sans-serif",
+      "body": "Open Sans, sans-serif"
+    }
+  }

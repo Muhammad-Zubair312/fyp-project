@@ -1,0 +1,15 @@
+{
+    
+    "colors": {
+      "background": "#4f46e5",
+      "backgroundGradient": "linear-gradient(to right, #4f46e5, #9333ea, #ec4899)",
+      "text": "#ffffff",
+      "primary": "#f9fafb",
+      "secondary": "#d1d5db",
+      "accent": "#06b6d4"
+    },
+    "fonts": {
+      "heading": "Montserrat, sans-serif",
+      "body": "Nunito, sans-serif"
+    }
+  }

@@ -1,0 +1,13 @@
+{
+    "colors": {
+      "background": "#f8fafc",
+      "text": "#111827",
+      "primary": "#2563eb",
+      "secondary": "#64748b",
+      "accent": "#16a34a"
+    },
+    "fonts": {
+      "heading": "Lato, sans-serif",
+      "body": "Source Sans Pro, sans-serif"
+    }
+  }

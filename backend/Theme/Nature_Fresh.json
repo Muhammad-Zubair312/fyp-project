@@ -1,0 +1,14 @@
+{
+    
+    "colors": {
+      "background": "#ecfdf5",
+      "text": "#064e3b",
+      "primary": "#10b981",
+      "secondary": "#d1fae5",
+      "accent": "#059669"
+    },
+    "fonts": {
+      "heading": "Playfair Display, serif",
+      "body": "Nunito, sans-serif"
+    }
+  }
