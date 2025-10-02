@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository - GitHub Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class='bg-gray-900 text-white p-4 flex space-x-4'>
+        <a href='index.html' class='px-3 py-2 hover:text-blue-400'>Home</a>
+        <a href='repository.html' class='px-3 py-2 hover:text-blue-400'>Repository</a>
+        <a href='profile.html' class='px-3 py-2 hover:text-blue-400'>Profile</a>
+        <a href='issues.html' class='px-3 py-2 hover:text-blue-400'>Issues</a>
+        <a href='pull-requests.html' class='px-3 py-2 hover:text-blue-400'>Pull Requests</a>
+        <a href='dashboard.html' class='px-3 py-2 hover:text-blue-400'>Dashboard</a>
+        <a href='login.html' class='px-3 py-2 hover:text-blue-400'>Login</a>
+        <a href='signup.html' class='px-3 py-2 hover:text-blue-400'>Signup</a>
+    </nav>
+
+    <!-- Repository Header -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="folder" class="w-6 h-6 text-gray-600"></i>
+                        <h1 class="text-2xl font-bold text-gray-900">username / repository-name</h1>
+                        <span class="px-2 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full border">Public</span>
+                    </div>
+                </div>
+                <div class="flex space-x-2 mt-4 md:mt-0">
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 flex items-center space-x-2">
+                        <i data-feather="eye" class="w-4 h-4"></i>
+                        <span>Watch</span>
+                        <span class="bg-gray-200 px-2 py-1 rounded text-xs">1.2k</span>
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 flex items-center space-x-2">
+                        <i data-feather="git-branch" class="w-4 h-4"></i>
+                        <span>Fork</span>
+                        <span class="bg-gray-200 px-2 py-1 rounded text-xs">245</span>
+                    </button>
+                    <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-md hover:bg-gray-200 flex items-center space-x-2">
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <span>Star</span>
+                        <span class="bg-gray-200 px-2 py-1 rounded text-xs">3.4k</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repository Navigation -->
+    <div class="bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex space-x-8 overflow-x-auto">
+                <a href="#" class="py-4 px-1 border-b-2 border-blue-600 text-blue-600 font-medium">Code</a>
+                <a href="issues.html" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Issues</a>
+                <a href="pull-requests.html" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Pull Requests</a>
+                <a href="#" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Actions</a>
+                <a href="#" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Projects</a>
+                <a href="#" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Wiki</a>
+                <a href="#" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Security</a>
+                <a href="#" class="py-4 px-1 border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">Insights</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg border border-gray-200 p-4">
+                    <h3 class="font-semibold text-gray-900 mb-4">About</h3>
+                    <p class="text-gray-600 text-sm mb-4">A simplified GitHub clone focusing on core version control features with repository forking/branching capabilities.</p>
+                    
+                    <div class="space-y-3 text-sm">
+                        <div class="flex items-center space-x-2">
+                            <i data-feather="link" class="w-4 h-4 text-gray-500"></i>
+                            <a href="#" class="text-blue-600 hover:underline">https://github-clone.com</a>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-feather="star" class="w-4 h-4 text-gray-500"></i>
+                            <span class="text-gray-600">3.4k stars</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-feather="git-branch" class="w-4 h-4 text-gray-500"></i>
+                            <span class="text-gray-600">245 forks</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-feather="eye" class="w-4 h-4 text-gray-500"></i>
+                            <span class="text-gray-600">1.2k watching</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-medium text-gray-900 mb-2">Releases</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-600">v1.2.0</span>
+                                <span class="text-xs text-gray-500">2 days ago</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-600">v1.1.0</span>
+                                <span class="text-xs text-gray-500">1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <h4 class="font-medium text-gray-900 mb-2">Packages</h4>
+                        <div class="text-sm text-gray-600">No packages published</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Repository Content -->
+            <div class="lg:col-span-3">
+                <!-- Branch Selector -->
+                <div class="bg-white rounded-lg border border-gray-200 mb-6">
+                    <div class="p-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <div class="flex items-center space-x-4 mb-4 sm:mb-0">
+                            <div class="flex items-center space-x-2">
+                                <i data-feather="git-branch" class="w-4 h-4 text-gray-500"></i>
+                                <select class="border border-gray-300 rounded px-3 py-1 text-sm">
+                                    <option>main</option>
+                                    <option>develop</option>
+                                    <option>feature/new-ui</option>
+                                    <option>bugfix/login-issue</option>
+                                </select>
+                            </div>
+                            <span class="text-sm text-gray-600">Updated 2 hours ago</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-1 bg-green-600 text-white rounded text-sm hover:bg-green-700 flex items-center space-x-1">
+                                <i data-feather="code" class="w-4 h-4"></i>
+                                <span>Code</span>
+                            </button>
+                            <button class="px-3 py-1 bg-blue-600 text-white rounded text-sm hover:bg-blue-700 flex items-center space-x-1">
+                                <i data-feather="git-pull-request" class="w-4 h-4"></i>
+                                <span>Pull Request</span>
+                            </button>
+                            <button class="px-3 py-1 bg-gray-100 text-gray-700 rounded text-sm hover:bg-gray-200 flex items-center space-x-1">
+                                <i data-feather="download" class="w-4 h-4"></i>
+                                <span>Download</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- File Browser -->
+                    <div class="p-4">
+                        <div class="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+                            <a href="#" class="hover:text-blue-600">username</a>
+                            <span>/</span>
+                            <a href="#" class="hover:text-blue-600">repository-name</a>
+                        </div>
+
+                        <div class="border border-gray-200 rounded">
+                            <div class="bg-gray-50 px-4 py-2 border-b border-gray-200 flex justify-between items-center">
+                                <div class="flex items-center space-x-2">
+                                    <i data-feather="file-text" class="w-4 h-4 text-gray-500"></i>
+                                    <span class="font-medium">README.md</span>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i data-feather="edit" class="w-4 h-4"></i>
+                                    </button>
+                                    <button class="text-gray-500 hover:text-gray-700">
+                                        <i data-feather="copy" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-gray-900 text-gray-100 font-mono text-sm">
+                                <pre># GitHub Clone Repository
+
+A simplified GitHub clone focusing on core version control features.
+
+## Features
+- Version Control
+- Code Collaboration
+- Issue Tracking
+- Pull Request Management
+- User Authentication
+- Repository Management
+- Code Editor
+
+## Getting Started
+1. Clone the repository
+2. Install dependencies
+3. Run the development server</pre>
+                            </div>
+                        </div>
+
+                        <!-- File List -->
+                        <div class="mt-4 space-y-2">
+                            <div class="flex items-center justify-between p-3 border border-gray-200 rounded hover:bg-gray-50">
+                                <div class="flex items-center space-x-3">
+                                    <i data-feather="folder" class="w-5 h-5 text-blue-500"></i>
+                                    <span class="font-medium">src</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Latest commit 2 hours ago</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 border border-gray-200 rounded hover:bg-gray-50">
+                                <div class="flex items-center space-x-3">
+                                    <i data-feather="file" class="w-5 h-5 text-gray-500"></i>
+                                    <span class="font-medium">package.json</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Latest commit 1 day ago</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 border border-gray-200 rounded hover:bg-gray-50">
+                                <div class="flex items-center space-x-3">
+                                    <i data-feather="file" class="w-5 h-5 text-gray-500"></i>
+                                    <span class="font-medium">index.html</span>
+                                </div>
+                                <span class="text-sm text-gray-500">Latest commit 3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Commits -->
+                <div class="bg-white rounded-lg border border-gray-200">
+                    <div class="p-4 border-b border-gray-200">
+                        <h3 class="font-semibold text-gray-900">Recent Commits</h3>
+                    </div>
+                    <div class="divide-y divide-gray-200">
+                        <div class="p-4">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://via.placeholder.com/32" alt="User" class="w-8 h-8 rounded-full">
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="font-medium text-gray-900">john_doe</span>
+                                        <span class="text-sm text-gray-500">committed 2 hours ago</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">Fix login authentication issue</p>
+                                    <div class="flex items-center space-x-4 mt-2 text-xs text-gray-500">
+                                        <span class="font-mono bg-gray-100 px-2 py-1 rounded">a1b2c3d</span>
+                                        <span>main</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://via.placeholder.com/32" alt="User" class="w-8 h-8 rounded-full">
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2">
+                                        <span class="font-medium text-gray-900">jane_smith</span>
+                                        <span class="text-sm text-gray-500">committed 1 day ago</span>
+                                    </div>
+                                    <p class="text-sm text-gray-600 mt-1">Add responsive design improvements</p>
+                                    <div class="flex items-center space-x-4 mt-2 text-xs text-gray-500">
+                                        <span class="font-mono bg-gray-100 px-2 py-1 rounded">e4f5g6h</span>
+                                        <span>main</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+        AOS.init();
+    </script>
+</body>
+</html>
