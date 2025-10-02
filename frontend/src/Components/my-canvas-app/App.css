@@ -1,0 +1,46 @@
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', sans-serif;
+  background: #090909ff;
+  display: flex;
+  flex-direction: column;
+ margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.app-title {
+  color: #4f46e5;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  margin-top: 60px;
+}
+
+.button-group button {
+  padding: 8px 16px;
+  background: #090909ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.button-group button:hover{
+  background-color: gray;
+}
+/* Split container ko full height do */
+.split {
+  flex: 1; /* buttons ke baad bacha hua sara space le lega */
+  display: flex;
+  height: 100%;
+}
+
+/* Right aur Left dono ko proper height do */
+.left-card,
+.right-card {
+  height: 100%;
+}

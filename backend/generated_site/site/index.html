@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Clone - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class='bg-gray-900 text-white p-4 flex flex-wrap space-x-4'>
+        <a href='index.html' class='px-3 py-2 hover:text-blue-400'>Home</a>
+        <a href='repository.html' class='px-3 py-2 hover:text-blue-400'>Repository</a>
+        <a href='profile.html' class='px-3 py-2 hover:text-blue-400'>Profile</a>
+        <a href='issues.html' class='px-3 py-2 hover:text-blue-400'>Issues</a>
+        <a href='pull-requests.html' class='px-3 py-2 hover:text-blue-400'>Pull Requests</a>
+        <a href='dashboard.html' class='px-3 py-2 hover:text-blue-400'>Dashboard</a>
+        <a href='login.html' class='px-3 py-2 hover:text-blue-400'>Login</a>
+        <a href='signup.html' class='px-3 py-2 hover:text-blue-400'>Signup</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6" data-aos="fade-up">Where the world builds software</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
+                <input type="text" placeholder="Search GitHub" class="px-4 py-3 rounded-lg text-gray-900 w-full sm:w-64">
+                <button class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold">Sign up for GitHub</button>
+                <button class="bg-transparent border border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-lg font-semibold">Sign in</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Powerful version control and collaboration</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Version Control -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="git-branch" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Version Control</h3>
+                    <p class="text-gray-600">Track changes, create branches, and manage your code history with Git integration.</p>
+                </div>
+
+                <!-- Code Collaboration -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="users" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Code Collaboration</h3>
+                    <p class="text-gray-600">Work together with team members through forking, branching, and code reviews.</p>
+                </div>
+
+                <!-- Issue Tracking -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="alert-circle" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Issue Tracking</h3>
+                    <p class="text-gray-600">Organize tasks, enhancements, and bugs with our integrated issue tracking system.</p>
+                </div>
+
+                <!-- Pull Request Management -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="git-pull-request" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pull Request Management</h3>
+                    <p class="text-gray-600">Review code changes, discuss modifications, and merge contributions seamlessly.</p>
+                </div>
+
+                <!-- Repository Management -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="folder" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Repository Management</h3>
+                    <p class="text-gray-600">Create, fork, and organize repositories with powerful access controls.</p>
+                </div>
+
+                <!-- Code Editor -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="code" class="text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Built-in Code Editor</h3>
+                    <p class="text-gray-600">Edit files directly in your browser with syntax highlighting and instant preview.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="zoom-in">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">65M+</div>
+                    <div class="text-gray-600">Developers</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">200M+</div>
+                    <div class="text-gray-600">Repositories</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">85M+</div>
+                    <div class="text-gray-600">Pull Requests</div>
+                </div>
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-3xl font-bold text-blue-600 mb-2">2M+</div>
+                    <div class="text-gray-600">Organizations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Ready to get started?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Join millions of developers and start building amazing software together.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
+                <button class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded-lg font-semibold">Sign up for free</button>
+                <button class="bg-transparent border border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i data-feather="github" class="w-8 h-8"></i>
+                        <span class="text-xl font-bold">GitHub Clone</span>
+                    </div>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-400">Terms</a>
+                    <a href="#" class="hover:text-blue-400">Privacy</a>
+                    <a href="#" class="hover:text-blue-400">Security</a>
+                    <a href="#" class="hover:text-blue-400">Status</a>
+                    <a href="#" class="hover:text-blue-400">Help</a>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 mt-6">
+                <p>&copy; 2024 GitHub Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS and Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+            feather.replace();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pull Requests - GitHub Clone</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class='bg-gray-900 text-white p-4 flex space-x-4'>
+        <a href='index.html' class='px-3 py-2 hover:text-blue-400'>Home</a>
+        <a href='repository.html' class='px-3 py-2 hover:text-blue-400'>Repository</a>
+        <a href='profile.html' class='px-3 py-2 hover:text-blue-400'>Profile</a>
+        <a href='issues.html' class='px-3 py-2 hover:text-blue-400'>Issues</a>
+        <a href='pull-requests.html' class='px-3 py-2 hover:text-blue-400'>Pull Requests</a>
+        <a href='dashboard.html' class='px-3 py-2 hover:text-blue-400'>Dashboard</a>
+        <a href='login.html' class='px-3 py-2 hover:text-blue-400'>Login</a>
+        <a href='signup.html' class='px-3 py-2 hover:text-blue-400'>Signup</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">Pull Requests</h1>
+            <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md flex items-center">
+                <i data-feather="git-pull-request" class="w-4 h-4 mr-2"></i>
+                New Pull Request
+            </button>
+        </div>
+
+        <!-- Tabs -->
+        <div class="border-b border-gray-200 mb-6">
+            <nav class="flex space-x-8">
+                <a href="#" class="border-b-2 border-blue-600 text-blue-600 py-4 px-1 font-medium">Open</a>
+                <a href="#" class="text-gray-500 hover:text-gray-700 py-4 px-1 font-medium">Closed</a>
+                <a href="#" class="text-gray-500 hover:text-gray-700 py-4 px-1 font-medium">Merged</a>
+                <a href="#" class="text-gray-500 hover:text-gray-700 py-4 px-1 font-medium">All</a>
+            </nav>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="bg-white rounded-lg shadow p-4 mb-6">
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1">
+                    <input type="text" placeholder="Search pull requests..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex space-x-4">
+                    <select class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Author</option>
+                        <option>Assignee</option>
+                        <option>Label</option>
+                    </select>
+                    <select class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>Sort: Newest</option>
+                        <option>Sort: Oldest</option>
+                        <option>Sort: Most commented</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pull Request List -->
+        <div class="space-y-4">
+            <!-- PR Item 1 -->
+            <div class="bg-white rounded-lg shadow p-6 border-l-4 border-green-500" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Open</span>
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 cursor-pointer">
+                            feat: Add user authentication middleware
+                        </h3>
+                    </div>
+                    <span class="text-sm text-gray-500">#123</span>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Added JWT-based authentication middleware for API routes. Includes token validation and user context injection.
+                </p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <div class="flex items-center space-x-4">
+                        <span>feature/auth-middleware ← main</span>
+                        <span class="flex items-center">
+                            <i data-feather="git-commit" class="w-4 h-4 mr-1"></i>
+                            3 commits
+                        </span>
+                        <span class="flex items-center">
+                            <i data-feather="file-text" class="w-4 h-4 mr-1"></i>
+                            2 files changed
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="https://via.placeholder.com/32" alt="User" class="w-6 h-6 rounded-full">
+                        <span>john-dev</span>
+                        <span>opened 2 hours ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PR Item 2 -->
+            <div class="bg-white rounded-lg shadow p-6 border-l-4 border-purple-500" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Draft</span>
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 cursor-pointer">
+                            fix: Resolve database connection pooling issue
+                        </h3>
+                    </div>
+                    <span class="text-sm text-gray-500">#122</span>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Fixes connection pooling configuration and adds proper error handling for database connections.
+                </p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <div class="flex items-center space-x-4">
+                        <span>fix/db-connections ← develop</span>
+                        <span class="flex items-center">
+                            <i data-feather="git-commit" class="w-4 h-4 mr-1"></i>
+                            5 commits
+                        </span>
+                        <span class="flex items-center">
+                            <i data-feather="file-text" class="w-4 h-4 mr-1"></i>
+                            4 files changed
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="https://via.placeholder.com/32" alt="User" class="w-6 h-6 rounded-full">
+                        <span>sarah-coder</span>
+                        <span>opened 1 day ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PR Item 3 -->
+            <div class="bg-white rounded-lg shadow p-6 border-l-4 border-blue-500" data-aos="fade-up">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="flex items-center space-x-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Ready for Review</span>
+                        <h3 class="text-lg font-semibold text-gray-800 hover:text-blue-600 cursor-pointer">
+                            refactor: Improve component architecture
+                        </h3>
+                    </div>
+                    <span class="text-sm text-gray-500">#121</span>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Restructured component hierarchy and improved prop drilling patterns. Added better TypeScript support.
+                </p>
+                <div class="flex items-center justify-between text-sm text-gray-500">
+                    <div class="flex items-center space-x-4">
+                        <span>refactor/components ← main</span>
+                        <span class="flex items-center">
+                            <i data-feather="git-commit" class="w-4 h-4 mr-1"></i>
+                            8 commits
+                        </span>
+                        <span class="flex items-center">
+                            <i data-feather="file-text" class="w-4 h-4 mr-1"></i>
+                            12 files changed
+                        </span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <img src="https://via.placeholder.com/32" alt="User" class="w-6 h-6 rounded-full">
+                        <span>mike-dev</span>
+                        <span>opened 3 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center mt-8">
+            <nav class="flex items-center space-x-2">
+                <button class="px-3 py-2 rounded border border-gray-300 text-gray-500 hover:bg-gray-50">Previous</button>
+                <button class="px-3 py-2 rounded bg-blue-600 text-white">1</button>
+                <button class="px-3 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50">2</button>
+                <button class="px-3 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50">3</button>
+                <button class="px-3 py-2 rounded border border-gray-300 text-gray-500 hover:bg-gray-50">Next</button>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+        AOS.init();
+    </script>
+</body>
+</html>
